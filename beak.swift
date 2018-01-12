@@ -12,8 +12,13 @@ import Rainbow
 // MARK: - Tasks
 /// Initializes the project with the given info.
 public func initialize(projectName: String) throws {
-    try ["README.md", "Logo.png"].forEach { try deleteFile($0) }
+    try ["README.md", "LICENSE.md", "Logo.png"].forEach { try deleteFile($0) }
     try renameProject(from: "NewProjectTemplate", to: projectName)
+    try installDependencies()
+}
+
+public func setupProject() {
+    try installMissingTools([.carthage, .bartycrouch, .swiftgen, .swiftlint])
     try installDependencies()
 }
 
@@ -28,7 +33,7 @@ public func installDependencies() throws {
 
 /// Updates project dependencies.
 public func updateDependencies() throws {
-    try installMissingTools([.carthage])
+    try installMissingTools(Tool.allValues)
 
     let command = "carthage update --platform ios --cache-builds"
     print("Updating dependencies via Carthage: \(command)", level: .info)
@@ -75,6 +80,10 @@ private enum Tool: String {
     case homebrew = "brew"
     case bartycrouch
     case carthage
+    case swiftgen
+    case swiftlint
+
+    var allValues: [Tool] = [.homebrew, .bartycrouch, .carthage, .swiftgen, .swiftlint]
 
     var isMissing: Bool {
         return run("which", rawValue).stdout.isEmpty
