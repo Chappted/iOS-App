@@ -1,10 +1,10 @@
 Primary:    #000000
-Secondary:  #0000ff
-Accent:     #ffa500
+Secondary:  #3891F2
+Accent:     #F09754
 
-Failure:    #ff0000
-Warning:    #ffff00
-Success:    #00ff00
+Failure:    #FA738C
+Warning:    #F7F788
+Success:    #97E381
 
-DarkText:   #000000
+DarkText:   #45494D
 LightText:  #ffffff
