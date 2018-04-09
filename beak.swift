@@ -17,7 +17,7 @@ public func initialize(projectName: String) throws {
     try installDependencies()
 }
 
-public func setupProject() {
+public func setupProject() throws {
     try installMissingTools([.carthage, .bartycrouch, .swiftgen, .swiftlint])
     try installDependencies()
 }
@@ -83,7 +83,9 @@ private enum Tool: String {
     case swiftgen
     case swiftlint
 
-    var allValues: [Tool] = [.homebrew, .bartycrouch, .carthage, .swiftgen, .swiftlint]
+    static var allValues: [Tool] {
+        return [.homebrew, .bartycrouch, .carthage, .swiftgen, .swiftlint]
+    }
 
     var isMissing: Bool {
         return run("which", rawValue).stdout.isEmpty
