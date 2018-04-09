@@ -1,6 +1,6 @@
 github "Dschee/SwiftyUserDefaults" "dd3d8ddc5bf95db09b66185182b5a555ac59efd5"
 github "Flinesoft/HandySwift" "2.5.0"
-github "Flinesoft/HandyUIKit" "1.7.2"
+github "Flinesoft/HandyUIKit" "1.7.3"
 github "Flinesoft/Imperio" "1.0.1"
 github "JonasGessner/JGProgressHUD" "v2.0.2"
 github "Quick/Nimble" "v7.0.3"
