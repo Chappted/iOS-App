@@ -61,7 +61,7 @@ internal enum StoryboardScene {
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
+    internal static let initialScene = InitialSceneType<PageViewController>(storyboard: Main.self)
   }
 }
 
