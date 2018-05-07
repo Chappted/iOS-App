@@ -5,7 +5,7 @@ github "Flinesoft/HandyUIKit" ~> 1.6
 github "Flinesoft/HandySwift" ~> 2.4
 
 # Keep the screen flow and data handling logic out of your view controllers – let them handle view-stuff only.
-github "Flinesoft/Imperio" ~> 1.0
+#github "Flinesoft/Imperio" "1.0.0"
 
 # Modern and extensive Apple-style progress HUD for iOS.
 github "JonasGessner/JGProgressHUD" ~> 2.0
@@ -24,3 +24,6 @@ github "Dschee/SwiftyUserDefaults" "master"
 
 # The best way to manage Dates and Timezones in Swift
 # github "malcommac/SwiftDate" ~> 4.4
+
+# A Swift Autolayout DSL for iOS & OS X
+github "SnapKit/SnapKit" ~> 4.0.0
