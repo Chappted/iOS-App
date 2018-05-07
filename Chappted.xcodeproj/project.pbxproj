@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572C97CA20A0C139004EFD01 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572C97C920A0C139004EFD01 /* SnapKit.framework */; };
+		572C97CC20A0C68E004EFD01 /* ChallengesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572C97CB20A0C68E004EFD01 /* ChallengesTableViewController.storyboard */; };
+		572C97CE20A0C6BE004EFD01 /* OpenChallengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C97CD20A0C6BE004EFD01 /* OpenChallengesTableViewController.swift */; };
+		572C97D220A0C714004EFD01 /* ActiveChanllengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C97D120A0C714004EFD01 /* ActiveChanllengesTableViewController.swift */; };
 		577F0292208B7C9B003648B0 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F0291208B7C9B003648B0 /* MenuCoordinator.swift */; };
 		5783C82C208B7F1C007406DB /* PageViewCtrlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783C82B208B7F1C007406DB /* PageViewCtrlViewModel.swift */; };
 		57E258F1208B810B0009E278 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E258F0208B810B0009E278 /* DataProvider.swift */; };
@@ -70,6 +74,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		572C97C920A0C139004EFD01 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		572C97CB20A0C68E004EFD01 /* ChallengesTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChallengesTableViewController.storyboard; sourceTree = "<group>"; };
+		572C97CD20A0C6BE004EFD01 /* OpenChallengesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChallengesTableViewController.swift; sourceTree = "<group>"; };
+		572C97D120A0C714004EFD01 /* ActiveChanllengesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChanllengesTableViewController.swift; sourceTree = "<group>"; };
 		577F0291208B7C9B003648B0 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		5783C82B208B7F1C007406DB /* PageViewCtrlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewCtrlViewModel.swift; sourceTree = "<group>"; };
 		57E258F0208B810B0009E278 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 				823F742F1ED8637B0022317D /* SwiftyBeaver.framework in Frameworks */,
 				823F742C1ED8637B0022317D /* HandyUIKit.framework in Frameworks */,
 				823F742B1ED8637B0022317D /* HandySwift.framework in Frameworks */,
+				572C97CA20A0C139004EFD01 /* SnapKit.framework in Frameworks */,
 				823F74301ED8637B0022317D /* SwiftyUserDefaults.framework in Frameworks */,
 				823F74431ED86AB30022317D /* JGProgressHUD.framework in Frameworks */,
 				823F742D1ED8637B0022317D /* Imperio.framework in Frameworks */,
@@ -168,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				823F73EF1ED84DAC0022317D /* PageViewController.swift */,
+				572C97CD20A0C6BE004EFD01 /* OpenChallengesTableViewController.swift */,
+				572C97D120A0C714004EFD01 /* ActiveChanllengesTableViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -263,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				823F73F41ED84DAC0022317D /* LaunchScreen.storyboard */,
+				572C97CB20A0C68E004EFD01 /* ChallengesTableViewController.storyboard */,
 				823F73F61ED84DAC0022317D /* Main.storyboard */,
 			);
 			path = "User Interface";
@@ -338,6 +350,7 @@
 				823F74261ED8637B0022317D /* HandyUIKit.framework */,
 				823F74271ED8637B0022317D /* Imperio.framework */,
 				823F74421ED86AB30022317D /* JGProgressHUD.framework */,
+				572C97C920A0C139004EFD01 /* SnapKit.framework */,
 				823F74291ED8637B0022317D /* SwiftyBeaver.framework */,
 				823F742A1ED8637B0022317D /* SwiftyUserDefaults.framework */,
 			);
@@ -568,6 +581,7 @@
 				823F74081ED84DAC0022317D /* LaunchScreen.storyboard in Resources */,
 				823F74141ED853BE0022317D /* Localizable.strings in Resources */,
 				823F74041ED84DAC0022317D /* Images.xcassets in Resources */,
+				572C97CC20A0C68E004EFD01 /* ChallengesTableViewController.storyboard in Resources */,
 				823F74091ED84DAC0022317D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +629,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/JGProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -658,11 +673,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572C97D220A0C714004EFD01 /* ActiveChanllengesTableViewController.swift in Sources */,
 				823F743C1ED8679D0022317D /* Storyboards.swift in Sources */,
 				823F74061ED84DAC0022317D /* PageViewController.swift in Sources */,
 				823F743D1ED8679D0022317D /* Strings.swift in Sources */,
 				823F743B1ED8679D0022317D /* Colors.swift in Sources */,
 				823F74451ED86ACF0022317D /* Progress.swift in Sources */,
+				572C97CE20A0C6BE004EFD01 /* OpenChallengesTableViewController.swift in Sources */,
 				57E258F1208B810B0009E278 /* DataProvider.swift in Sources */,
 				823F74411ED868870022317D /* Branding.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
