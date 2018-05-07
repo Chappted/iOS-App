@@ -15,7 +15,9 @@ class MenuCoordinator: AppCoordinator {
 
     // MARK: - Stored Instance Properties
     private lazy var pageViewController = PageViewController()
-
+    private lazy var openChallengesViewController = StoryboardScene.ChallengesTableViewController.openChallengesTableViewController.instantiate()
+    private lazy var activeChallengesViewController = StoryboardScene.ChallengesTableViewController.activeChanllengesTableViewController.instantiate()
+	
     // MARK: - Computed Instance Properties
     override var mainViewController: UIViewController {
         return pageViewController
@@ -25,17 +27,22 @@ class MenuCoordinator: AppCoordinator {
     override func start() {
         super.start()
 
-        pageViewController.dataProvider.changeData { viewModel in
-            viewModel = pageViewController(title: l10n.HomeTab.title)
+        pageViewController.pageProvider.changeData { viewControllers in
+            viewControllers = [self.openChallengesViewController, self.activeChallengesViewController]
         }
 
-        pageViewController.coordinate = { [unowned self] action in
-            switch action {
-            case let .didSelectIndex(type):
-                self.handleSelectedTabBarItem(type: type)
-            }
-        }
+        setupOpenChanllengesViewCtrl()
+        setupActiveChanllengesViewCtrl()
 
         AppDelegate.shared?.window!.rootViewController = pageViewController
+    }
+
+    // MARK: - Instance Methods
+    private func setupOpenChanllengesViewCtrl() {
+        openChallengesViewController.title = "Challenges"
+    }
+
+    private func setupActiveChanllengesViewCtrl() {
+        activeChallengesViewController.title = "Accepted"
     }
 }
