@@ -21,7 +21,6 @@
 		823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F73EE1ED84DAC0022317D /* AppDelegate.swift */; };
 		823F74061ED84DAC0022317D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F73EF1ED84DAC0022317D /* PageViewController.swift */; };
 		823F74081ED84DAC0022317D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F73F41ED84DAC0022317D /* LaunchScreen.storyboard */; };
-		823F74091ED84DAC0022317D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F73F61ED84DAC0022317D /* Main.storyboard */; };
 		823F74141ED853BE0022317D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 823F74161ED853BE0022317D /* Localizable.strings */; };
 		823F742B1ED8637B0022317D /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823F74251ED8637B0022317D /* HandySwift.framework */; };
 		823F742C1ED8637B0022317D /* HandyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823F74261ED8637B0022317D /* HandyUIKit.framework */; };
@@ -90,12 +89,10 @@
 		823F73EF1ED84DAC0022317D /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		823F73F21ED84DAC0022317D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		823F73F51ED84DAC0022317D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		823F73F71ED84DAC0022317D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		823F73FD1ED84DAC0022317D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		823F74031ED84DAC0022317D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		823F74151ED853BE0022317D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		823F74171ED853D70022317D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		823F74181ED853D70022317D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		823F74191ED853D70022317D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		823F741B1ED85E2E0022317D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		823F741C1ED861100022317D /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -275,7 +272,6 @@
 			children = (
 				823F73F41ED84DAC0022317D /* LaunchScreen.storyboard */,
 				572C97CB20A0C68E004EFD01 /* ChallengesTableViewController.storyboard */,
-				823F73F61ED84DAC0022317D /* Main.storyboard */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -582,7 +578,6 @@
 				823F74141ED853BE0022317D /* Localizable.strings in Resources */,
 				823F74041ED84DAC0022317D /* Images.xcassets in Resources */,
 				572C97CC20A0C68E004EFD01 /* ChallengesTableViewController.storyboard in Resources */,
-				823F74091ED84DAC0022317D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,15 +724,6 @@
 				823F74171ED853D70022317D /* de */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		823F73F61ED84DAC0022317D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				823F73F71ED84DAC0022317D /* Base */,
-				823F74181ED853D70022317D /* de */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		823F74161ED853BE0022317D /* Localizable.strings */ = {
