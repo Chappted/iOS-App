@@ -53,15 +53,17 @@ internal extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum ChallengesTableViewController: StoryboardType {
+    internal static let storyboardName = "ChallengesTableViewController"
+
+    internal static let activeChanllengesTableViewController = SceneType<Chappted.ActiveChanllengesTableViewController>(storyboard: ChallengesTableViewController.self, identifier: "ActiveChanllengesTableViewController")
+
+    internal static let openChallengesTableViewController = SceneType<Chappted.OpenChallengesTableViewController>(storyboard: ChallengesTableViewController.self, identifier: "OpenChallengesTableViewController")
+  }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
 
     internal static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
-  }
-  internal enum Main: StoryboardType {
-    internal static let storyboardName = "Main"
-
-    internal static let initialScene = InitialSceneType<PageViewController>(storyboard: Main.self)
   }
 }
 
